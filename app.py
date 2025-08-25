@@ -2,10 +2,6 @@ from flask import Flask, request, jsonify
 import pickle
 from main import generateAI
 
-# Train and save model only if needed
-# generateAI()
-
-# Load trained model
 ai = pickle.load(open('model.pkl', 'rb'))
 
 app = Flask(__name__)
